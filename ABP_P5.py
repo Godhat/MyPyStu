@@ -94,4 +94,35 @@ print("Set bri & bric is : ",bri & bric)
 3、变更名只是指向内存中存储了相应对象的那部分；
 4、叫作名称绑定Binding给那个对象
 """
+print()
+shoplist=['apple','banana']
+mylist=shoplist
+del shoplist[0] #删除时影响同时引用的对象
+print("mylist is : ",mylist)
+print("shoplist is : ",shoplist)
 
+shoplist.append('pear')
+mylist=shoplist[:]
+print()
+print("Shoplist is : ",shoplist)
+print("Mylist is : ",mylist)
+del shoplist[0]
+print("shoplist del first item, mylist is : ",mylist)
+print("Shoplist is : ",shoplist)
+
+"""注意：要使用切片操作来制作副本
+如果只通过变更名赋值，则只会查阅同一个对象，如果对象改变，则受影响
+"""
+print()
+# P86 字符串都是str类下的对象,具有方法
+name='David Tai'
+if name.startswith('Dav'):
+    print('Yes,the name starts with "Dav"')
+if 'a' in name:
+    print("Yes, name it contains the string 'a'")
+if name.find('ai') !=-1:
+    print("Yes, name it contains the string 'ai'")
+    
+delimiter='_*_'
+myls=['China','Brazil','USA','Russia']
+print(delimiter.join(myls))
