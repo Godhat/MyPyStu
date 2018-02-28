@@ -1,5 +1,11 @@
 # Godhat Study from <<A Byte of Python>>
 # Version 4.06c  public 2017-07-28
+'''P122 标准库 Python Standrad Library
+    
+    1、标准库是Python安装包的一部分；
+    2、通过安装包文件的库概览Library Reference可查找所有模块全部细节
+'''# Godhat Study from <<A Byte of Python>>
+# Version 4.06c  public 2017-07-28
 print("hello world")
 help('len')
 # help('return')
